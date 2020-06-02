@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Use oxr463/setup-cordova
+    - name: Use adnil3910/setup-cordova
       uses: ./
       with:
         exec: |
