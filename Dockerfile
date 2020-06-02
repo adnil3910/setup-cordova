@@ -1,7 +1,6 @@
 FROM runmymind/docker-android-sdk:alpine-standalone
 
 RUN apk update && apk upgrade && \
-    npm \
     curl \
     && curl -s "https://get.sdkman.io"\
     && source "$HOME/.sdkman/bin/sdkman-init.sh" &&\
