@@ -1,6 +1,7 @@
 FROM runmymind/docker-android-sdk:alpine-standalone
 
 RUN apk update && apk upgrade && \
+    rm /bin/sh && ln -s /bin/bash /bin/sh \
     curl -s "https://get.sdkman.io" | bash \
     source "$HOME/.sdkman/bin/sdkman-init.sh" \
     sdk install gradle 6.4.1 \
